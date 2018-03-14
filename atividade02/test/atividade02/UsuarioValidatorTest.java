@@ -1,4 +1,4 @@
-package br.com.utfpr.servicos;
+package atividade02;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -6,8 +6,6 @@ import static org.mockito.Mockito.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.utfpr.DAO.UsuarioDAO;
-import br.com.utfpr.dominio.Usuario;
 
 public class UsuarioValidatorTest {
 

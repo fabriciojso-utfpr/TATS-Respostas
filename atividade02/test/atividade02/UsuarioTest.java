@@ -1,9 +1,7 @@
-package br.com.utfpr.dominio;
+package atividade02;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import br.com.utfpr.dominio.Usuario;
 
 public class UsuarioTest {
 

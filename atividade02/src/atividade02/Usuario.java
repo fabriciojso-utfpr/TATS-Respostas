@@ -1,4 +1,4 @@
-package br.com.utfpr.dominio;
+package atividade02;
 
 public class Usuario {
 	

@@ -1,7 +1,7 @@
-package br.com.utfpr.servicos;
+package atividade02;
 
-import br.com.utfpr.DAO.UsuarioDAO;
-import br.com.utfpr.dominio.Usuario;
+import atividade02.UsuarioDAO;
+import atividade02.Usuario;
 
 public class UsuarioValidator {
 
