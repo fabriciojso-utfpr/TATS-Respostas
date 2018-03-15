@@ -19,4 +19,28 @@ public class CalculadoraDeSalarioTest {
             "nome", "email", 1200.00, "cargo"
         );
     }
+    
+    @Test
+    public void testaDesenvolvedorComSalarioMaiorQue3000(){
+        Funcionario desenvolvedor = new Funcionario(
+            "Fabricio",
+            "fabricio.jhonata@gmail.com",
+            5000.00,
+            "desenvolvedor"
+        );
+        CalculadoraDeSalario calc = new CalculadoraDeSalario();
+        assertEquals(4500, calc.calcula(desenvolvedor));
+    }
+    
+    @Test
+    public void testaDesenvolvedorComSalarioMenorQue3000(){
+        Funcionario desenvolvedor = new Funcionario(
+            "Fabricio",
+            "fabricio.jhonata@gmail.com",
+            2500.00,
+            "desenvolvedor"
+        );
+        CalculadoraDeSalario calc = new CalculadoraDeSalario();
+        assertEquals(1875, calc.calcula(desenvolvedor));
+    }
 }
