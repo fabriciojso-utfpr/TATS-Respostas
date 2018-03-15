@@ -29,7 +29,7 @@ public class CalculadoraDeSalarioTest {
             "desenvolvedor"
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
-        assertEquals(4500, calc.calcula(desenvolvedor));
+        assertEquals(4000, calc.calcula(desenvolvedor), 0.0001);
     }
     
     @Test
@@ -41,6 +41,7 @@ public class CalculadoraDeSalarioTest {
             "desenvolvedor"
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
-        assertEquals(1875, calc.calcula(desenvolvedor));
+        assertEquals(2250, calc.calcula(desenvolvedor), 0.0001);
     }
+   
 }
