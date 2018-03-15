@@ -6,7 +6,6 @@ import static org.mockito.Mockito.*;
 import org.junit.Before;
 import org.junit.Test;
 
-
 public class UsuarioValidatorTest {
 
     private UsuarioDAO usuarioDaoFalso;
@@ -77,7 +76,7 @@ public class UsuarioValidatorTest {
         usuario.setSenhaConfirmada("123senha");
         assertFalse(this.usuarioValidator.ehUsuarioValido(usuario));
     }
-    
+
     @Test
     public void validaUsuarioComDigitosEmNome() throws Exception {
         Usuario usuario = new Usuario();
