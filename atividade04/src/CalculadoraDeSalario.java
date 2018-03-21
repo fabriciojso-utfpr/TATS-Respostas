@@ -11,11 +11,15 @@
 class CalculadoraDeSalario {
 
     double calcula(Funcionario funcionario) {
-        if(funcionario.getSalario() == 5000.00){
-            return 4000.00;
+        double porcentagem;
+        if(funcionario.getCargo().equals("desenvolvedor") && funcionario.getSalario() >= 3000.00){
+            porcentagem = 20;
         }else{
-            return 2500.00;
+            porcentagem = 10;
         }
+        
+        double desconto = funcionario.getSalario()  * (porcentagem / 100);
+        return funcionario.getSalario() - desconto;
     }
     
 }
