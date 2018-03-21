@@ -11,7 +11,7 @@
 class CalculadoraDeSalario {
 
     double calcula(Funcionario funcionario) {
-        double porcentagem;
+        double porcentagem = 100;
         if(funcionario.getCargo().equals("desenvolvedor") && funcionario.getSalario() >= 3000.00){
             porcentagem = 20;
         }else{

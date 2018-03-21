@@ -1,27 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author fabriciojso
- */
-public class CalculadoraDeSalarioTest {
+
+public class CalculadoraDeSalarioDesenvolvedorTest {
     
+   
     @Test
-    public void testaFuncionarioComNomeEmailEsalarioBaseECargo(){
-        Funcionario funcionario = new Funcionario(
-            "nome", "email", 1200.00, "cargo"
-        );
-    }
-    
-    @Test
-    public void testaDesenvolvedorComSalarioMaiorQue3000(){
+    public void testComSalarioMaiorQue3000(){
         Funcionario desenvolvedor = new Funcionario(
             "Fabricio",
             "fabricio.jhonata@gmail.com",
@@ -33,7 +18,7 @@ public class CalculadoraDeSalarioTest {
     }
     
     @Test
-    public void testaDesenvolvedorComSalarioMenorQue3000(){
+    public void testComSalarioMenorQue3000(){
         Funcionario desenvolvedor = new Funcionario(
             "Fabricio",
             "fabricio.jhonata@gmail.com",
