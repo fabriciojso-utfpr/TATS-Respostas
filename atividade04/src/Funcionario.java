@@ -13,9 +13,11 @@ public class Funcionario {
     private String nome;
     private String email;
     private Double salario;
-    private String cargo;
 
-    public Funcionario(String nome, String email, Double salario, String cargo) {
+    
+    private Cargo cargo;
+
+    public Funcionario(String nome, String email, Double salario, Cargo cargo) {
         this.nome = nome;
         this.email = email;
         this.salario = salario;
@@ -45,15 +47,14 @@ public class Funcionario {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
-
-    public String getCargo() {
+    
+    public Cargo getCargo() {
         return cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(Cargo cargo) {
         this.cargo = cargo;
     }
-
     
     
 }

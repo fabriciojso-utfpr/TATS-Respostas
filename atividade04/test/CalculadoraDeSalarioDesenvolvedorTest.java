@@ -11,7 +11,7 @@ public class CalculadoraDeSalarioDesenvolvedorTest {
             "Fabricio",
             "fabricio.jhonata@gmail.com",
             5000.00,
-            "desenvolvedor"
+            Cargo.DESENVOLVEDOR
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
         assertEquals(4000, calc.calcula(desenvolvedor), 0.0001);
@@ -23,7 +23,7 @@ public class CalculadoraDeSalarioDesenvolvedorTest {
             "Fabricio",
             "fabricio.jhonata@gmail.com",
             2500.00,
-            "desenvolvedor"
+            Cargo.DESENVOLVEDOR
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
         assertEquals(2250, calc.calcula(desenvolvedor), 0.0001);

@@ -20,7 +20,7 @@ public class CalculadoraDeSalarioDBATest {
             "Fabricio",
             "fabricio.jhonata@gmail.com",
             3000.00,
-            "dba"
+            Cargo.DBA
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
         assertEquals(2250, calc.calcula(dba), 0.0001);
@@ -32,7 +32,7 @@ public class CalculadoraDeSalarioDBATest {
             "Fabricio",
             "fabricio.jhonata@gmail.com",
             1000.00,
-            "dba"
+            Cargo.DBA
         );
         CalculadoraDeSalario calc = new CalculadoraDeSalario();
         assertEquals(850, calc.calcula(dba), 0.0001);
